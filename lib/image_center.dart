@@ -1,23 +1,3 @@
-// // import 'package:flutter/material.dart';
-
-// // void main(){
-// //   runApp(MaterialApp(
-// //     title: "First App",
-// //     home: HomePage(),
-// //   ));
-// // }
-
-// // class HomePage extends StatelessWidget {
-// //   @override
-// //   Widget build(BuildContext context) {
-// //     return Scaffold(
-// //       appBar: AppBar(
-// //         title: Text("Home Page"),
-// //       ),
-// //       body: Center(child: Text("Home Page")),
-// //     );
-// //   }
-// // }
 // // ignore_for_file: prefer_const_constructors
 
 // import 'package:flutter/material.dart';
@@ -62,27 +42,27 @@
 //       appBar: AppBar(
 //         title: const Text("Profile Page"),
 //       ),
-//       body:
-//       Card(
-//         child: data != null
-//             ? Center(
-//                child:
-//                ListView.builder(
-//               itemBuilder: (context, index) {
-//                 return
-//                       Padding(
-//                         padding: const EdgeInsets.all(8.0),
-//                         child: ListTile(
-//                           title: Text(data[index]["title"]),
-//                           leading: Image.network(data[index]["url"]),
-//                           ),
-//                       );
-//               })
-//             )
-//             : Center(
-//               child: CircularProgressIndicator()
-//               ),
+//       body: Center(
+//         child: Container(
+//           width: 300,
+//           height: 500,
+
+//           child: Padding(
+//             padding: const EdgeInsets.all(8.0),
+//             child: ListView(
+//               children: <Widget>[
+//                 Image.asset(
+//                     'assest/the_girl_with_dragon_tatoo.jpg',
+//                     fit: BoxFit.cover,
+//                   )
+//               ],
+//             ),
+//           ),
+//         ),
 //       ),
+
+
+
 //       drawer: Mydrawer(),
 //       floatingActionButton: FloatingActionButton(
 //         onPressed: () {

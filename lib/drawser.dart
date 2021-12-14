@@ -6,7 +6,9 @@ class Mydrawer extends StatelessWidget{
     return Drawer(
         // backgroundColor: Colors.purple,
         child: ListView(
+
           children: <Widget>[
+
             // DrawerHeader(
             //   child: Text(
             //     "hello",
@@ -16,8 +18,8 @@ class Mydrawer extends StatelessWidget{
             //   ),
             //   ),
             UserAccountsDrawerHeader(
-              accountName: Text("Roshan kc"),
-            accountEmail: Text("roshan@gmail.com"),
+              accountName: const Text("Roshan kc"),
+            accountEmail: const Text("roshan@gmail.com"),
             currentAccountPicture: Image.asset(
               'assest/rosn.jpg',
               )
@@ -25,13 +27,13 @@ class Mydrawer extends StatelessWidget{
             //   backgroundImage: NetworkImage('assest/rosn.jpg'),
             // ),
             ),
-              ListTile(
+              const ListTile(
                 leading: Icon(Icons.person),
                 title: Text("Account"),
                 subtitle: Text("Personal"),
                 trailing: Icon(Icons.edit),
               ),
-               ListTile(
+               const ListTile(
                 leading: Icon(Icons.email),
                 title: Text("Email"),
                 subtitle: Text("roshan@gmail.com"),
